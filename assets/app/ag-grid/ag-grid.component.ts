@@ -6,8 +6,7 @@ import { GridOptions } from 'ag-grid-community';
 
 @Component({
   selector: 'app-ag-grid',
-  templateUrl: './ag-grid.component.html',
-  styleUrls: ['./ag-grid.component.scss']
+  templateUrl: './ag-grid.component.html'
 })
 export class AgGridComponent implements OnInit {
   @ViewChild('agGrid') agGrid: AgGridNg2;

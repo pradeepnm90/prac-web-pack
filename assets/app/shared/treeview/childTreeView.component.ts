@@ -3,8 +3,7 @@ import { TreeView } from './treeview.model';
 
 @Component({
     selector: 'child-tree-view',
-    templateUrl: './childTreeView.html',
-    styleUrls: ['./childTreeView.scss']
+    templateUrl: './childTreeView.html'
 })
 
 export class ChildTreeViewComponent {

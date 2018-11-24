@@ -35,10 +35,10 @@ module.exports = webpackMerge.smart(commonConfig, {
     },
 
     plugins: [
-    new ngw.AngularCompilerPlugin({
-      tsConfigPath: './tsconfig.aot.json',
-      entryModule: './assets/app/app.module#AppModule'
-    }),
+        new ngw.AngularCompilerPlugin({
+            tsConfigPath: './tsconfig.aot.json',
+            entryModule: './assets/app/app.module#AppModule'
+        }),
         new webpack.optimize.UglifyJsPlugin({
             sourceMap: false
         })

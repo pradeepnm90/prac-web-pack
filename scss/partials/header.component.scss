@@ -1,4 +1,4 @@
-@import "../../../scss/mixin";
+@import "../includes/mixin";
 //header
 .markell-header{
     height: 80px;
@@ -10,7 +10,7 @@
         h1:first-child{
             a{
                 display: block;
-                background: transparent url("../../../assets/images/masthead-logo-mc-large.png")  no-repeat;
+                background: transparent url("../../assets/images/masthead-logo-mc-large.png") no-repeat;
                 background-position: top;
                 text-indent: -999px;
                 width:50px;

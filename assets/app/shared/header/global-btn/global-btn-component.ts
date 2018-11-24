@@ -7,8 +7,7 @@ import * as SetglobalBtnListActions from "./store/action/global-btn.actions"
 
 @Component({
     selector: 'global-btn',
-    templateUrl: './global-btn-template.html',
-    styleUrls: ['./global-btn.scss']
+    templateUrl: './global-btn-template.html'
 })
 export class GlobalBtnComponent implements OnInit {
 
