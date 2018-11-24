@@ -1,0 +1,15 @@
+<div class="inlineBlock pad-left-25 txtWhite txtSize18 dropdown " appGlobalBtn>
+    <a class=" txtWhite dropdown-toggle noInderline globalBtn" data-toggle="dropdown" aria-haspopup="true"
+        aria-expanded="true">{{menuTitle}}
+        <span class="mar-15-left caret "></span>
+    </a>
+    <ul class="dropdown-menu ">
+        <li *ngFor="let val of menuList;let i = index; first as isFirst; " (click)="selectVal(val)">
+            <a [ngClass]="{'txtBold txtRed':isFirst}">{{val}}
+                <span class="glyphicon glypycon-circle glyphicon-ok txtWhite pull-right txtSize10 line-height1dot7 mar-15-left"
+                    aria-hidden="true" *ngIf="isFirst">
+                </span>
+            </a>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,65 @@
+<header class="markell-header ">
+  <div class=" container col-md-12 inherit-height ">
+    <div class="left-header floatL inlineBlock fullHeight ">
+      <div class="floatL inlineBlock pad-15-right">
+        <h1 class=" noMargin npPadding">
+          <a href="#" class="txtWhite" title="Go to Markell re insurance"></a>
+        </h1>
+      </div>
+
+      <div class=" inlineBlock border-right-default mar-15-top">
+        <div class=" pad-right-25 ">
+          <div class="spacer10"></div>
+          <h1 class="markel-header-title noMargin txtWhite">{{headerName}} <span class="txtBold txtSize20">{{headerNameShort}}</span>
+          </h1>
+          <div class="spacer15"></div>
+        </div>
+      </div>
+      <global-btn></global-btn>
+    </div>
+
+    <div class="right-header  txtLeft  inlineBlock floatR  fullHeight ">
+      <div class="flexRow flexJustifyEnd flex1 inherit-height">
+        <div class="search-area pad-15-right">
+          <form class=" " [formGroup]="searchForm">
+            <div class="spacer20"></div>
+            <div class="searchContainer flexBlock flexRow ">
+              <div class="inlineBlock txtwhite flexCenterSelf">
+                <span class="glyphicon glyphicon-search "></span>
+              </div>
+              <!--end of col-->
+              <div class="inlineBlock flexBasis72">
+                <input formControlName="searchInput" (keyup)="searchData($event)" class="form-control form-control-lg form-control-borderless bgMarkellRed noBorder placeholderSearch fullHeight txtWhite"
+                  type="search" placeholder="Search by Deal#/ Deal name">
+              </div>
+              <!--end of col-->
+              <div class="inlineBlock txtwhite keep-right flexCenterSelf txtSize12">
+                <a href="#" href="#" class="txtwhite" type="submit">Advance Search</a>
+              </div>
+              <!--end of col-->
+            </div>
+            <div class="spacer15"></div>
+            <div class="clear"></div>
+          </form>
+        </div>
+        <div class="account-area flexRow flexCenter relative ">
+          <a href="#" class="pad-15-right"><i class="fa fa-bell-o txtWhite pad-15-right txtSize32" aria-hidden="true"></i>
+            <span class="badge badge-danger txtSize15">25</span></a>
+          <div class="dropdown inlineBlock">
+            <a href="#" class="txtWhite  txtSize18 noUnderline dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="true"><span class="pad-15-right">Dohn Bahr</span>
+              <img src="../../../assets/images/dp.jpg" />
+              <span class="mar-15-left caret "></span></a>
+            <ul class="dropdown-menu ">
+              <li><a>Preferences</a></li>
+              <li><a>Sign Out</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="clear"></div>
+    </div>
+
+  </div>
+</header>

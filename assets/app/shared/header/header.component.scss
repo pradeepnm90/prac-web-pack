@@ -1,0 +1,82 @@
+@import "../../../scss/mixin";
+//header
+.markell-header{
+    height: 80px;
+    background: $markellRed;
+    text-align: center;
+    position: relative;
+
+    .left-header{
+        h1:first-child{
+            a{
+                display: block;
+                background: transparent url("../../../assets/images/masthead-logo-mc-large.png")  no-repeat;
+                background-position: top;
+                text-indent: -999px;
+                width:50px;
+                height: 80px;
+            }
+        }
+        .markel-header-title{
+            line-height: 5.5;
+            font: normal normal 25px Arial, Helvetica, sans-serif;
+        }
+    }
+
+    .right-header{
+        .search-area{
+            width: 455px;
+            .searchContainer{
+                border: 1px solid $White;
+                border-radius: 40px;
+                height: 35px;
+                padding: 4px 10px;
+                .glyphicon-search{
+                    color: $White;
+                }
+                .placeholderSearch {
+                    box-shadow: none;
+                    &::-webkit-input-placeholder{
+                        color: $White;
+                        opacity: 0.5;
+                    }
+                    &:focus{
+                        border: none;
+                        box-shadow: none;
+                    }
+                }
+                a{
+                    color: $White;
+                }
+            }
+        }
+        .account-area{
+            img{
+                height: 47px;
+                width: 47px;
+                border-radius: 50%;
+            }
+            .badge{
+                padding: 4px 0px 2px;
+                position: absolute;
+                top: 8px;
+                left: 22px;
+                display: inline-block;
+                width: 28px;
+                font-size: 17px;
+                font-weight: bold;
+                color: #B71234;
+                vertical-align: baseline;
+                white-space: nowrap;
+                text-align: center;
+                border-radius: 10px;
+                height: 25px;
+                border-radius: 50%;
+            }
+            .badge-danger {
+                background-color:$White;
+            }
+        }
+    
+    }
+}

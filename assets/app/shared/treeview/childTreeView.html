@@ -1,0 +1,24 @@
+<ul class="pad-10-left">
+    <li id="drop-area" *ngFor="let dir of directories; let i=index;" class="droparea" (dragover)="dragover($event,dir.name)"
+        (drop)="drop($event,dir.name)" (dragleave)=" dragleave($event,dir.name)" treeviewDirective>
+        <span>
+            <i class="iconButton fa txtRed txtSize18" [ngClass]="(dir.getIcon()) ? 'fa-chevron-down':'fa-chevron-right'"
+                (click)="dir.toggle()" aria-hidden="true">
+                <i class="fa fa-file-text txtRed fileIcon txtSize32 pad-10-left pad-7-right" aria-hidden="true"></i>
+            </i> {{ dir.name }}
+        </span>
+
+        <div *ngIf="dir.expanded">
+
+            <ul #subDoc>
+                <li *ngFor="let file of dir.files" class="pad-70-left" #addFile>
+                    <i class="fa fa-file-text txtRed  txtSize32 pad-10-left pad-7-right" aria-hidden="true"></i>{{file}}
+                </li>
+            </ul>
+            <!-- recursive child tree view tag below -->
+            <child-tree-view [directories]="dir.directories"></child-tree-view>
+
+        </div>
+
+    </li>
+</ul>
