@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl } from "@angular/forms";
+import "../../../../public/stylesheets/grs-bundle/grs-bundle.css";
+import "jquery/dist/jquery.min.js";
+import "bootstrap/dist/js/bootstrap.js";
+import "font-awesome/css/font-awesome.css";
 
 @Component({
   selector: 'app-header',

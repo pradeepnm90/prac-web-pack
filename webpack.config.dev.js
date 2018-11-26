@@ -26,6 +26,11 @@ module.exports = webpackMerge(commonConfig, {
                     { loader: 'angular2-template-loader' },
                     { loader: 'angular-router-loader' }
                 ]
+            },
+            {
+                test: /\.(css|scss)$/,
+                loaders: ['to-string-loader', 'css-loader', 'sass-loader'],
+                // include: path.resolve(__dirname, './scss')
             }
         ]
 

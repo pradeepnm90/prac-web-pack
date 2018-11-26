@@ -13,23 +13,12 @@ module.exports = {
                 test: /\.html$/,
                 use: [{ loader: 'html-loader' }]
             },
+
             {
-                test: /\.css$/,
-                use: ['style-loader', 'css-loader']
+                test: /\.(png|jpg)$/,
+                loader: 'url-loader'
             },
-            {
-                test: /\.(gif|png|jpe?g|svg)$/i,
-                use: [
-                    'file-loader',
-                    {
-                        loader: 'image-webpack-loader',
-                        options: {
-                            bypassOnDebug: true, // webpack@1.x
-                            disable: true, // webpack@2.x and newer
-                        },
-                    },
-                ],
-            }
+            { test: /\.(png|woff|woff2|eot|ttf|svg)$/, loader: 'url-loader?limit=100000' }
         ],
         exprContextCritical: false
     }

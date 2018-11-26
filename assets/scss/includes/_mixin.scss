@@ -1,0 +1,65 @@
+// Wars
+$media-all: "all";
+$media-print: "print";
+$media-desktop: "screen and (min-width: 992px)";
+$media-desktop-tab: "screen and (min-width: 768px)";
+$media-tablet: "screen and (max-width: 991px) and (min-width: 768px)";
+$media-tab-mobile: "screen and (max-width: 991px)";
+$media-mobile: "screen and (max-width: 767px)";
+$media-large-desktop: "screen and (min-width: 1200px)";
+
+/* IE10+ CSS styles go here */
+
+$media-IE: "(-ms-high-contrast:none)";
+// Colors
+$markellRed: #B71234;
+$White: #ffffff; 
+$green: #68A517;
+$grey: #C1C1C1;
+$darkGrey: #424345;;
+
+
+@mixin display-flex($direction: row, $wrap: nowrap) {
+    display: -webkit-box;
+    /* OLD: Safari,  iOS, Android browser, older WebKit browsers.  */
+    display: -moz-box;
+    /* OLD: Firefox (buggy) */
+    display: -ms-flexbox;
+    /* MID: IE 10 */
+    display: -webkit-flex;
+    /* NEW, Chrome 21?28, Safari 6.1+ */
+    display: flex;
+    @if $direction {
+        -webkit-flex-direction: $direction;
+        -moz-flex-direction: $direction;
+        -ms-flex-direction: $direction;
+        flex-direction: $direction;
+    }
+    @if $wrap {
+        -webkit-flex-wrap: $wrap;
+        -moz-flex-wrap: $wrap;
+        -ms-flex-wrap: $wrap;
+        flex-wrap: $wrap;
+    }
+}
+
+@mixin flex($shrink: 0, $grow: 0, $basis: auto) {
+    @if $shrink {
+        -webkit-flex-shrink: $shrink;
+        -moz-flex-shrink: $shrink;
+        -ms-flex-shrink: $shrink;
+        flex-shrink: $shrink;
+    }
+    @if $grow {
+        -webkit-flex-grow: $grow;
+        -moz-flex-grow: $grow;
+        -ms-flex-grow: $grow;
+        flex-grow: $grow;
+    }
+    @if $basis {
+        -webkit-flex-basis: $basis;
+        -moz-flex-basis: $basis;
+        -ms-flex-basis: $basis;
+        flex-basis: $basis;
+    }
+}

@@ -3,8 +3,8 @@ import { Store } from '@ngrx/store';
 import { DropdownMenuItem } from './store/model/global-btn.model';
 import { Observable } from 'rxjs';
 import { DropdownMenuState } from './store/State/global-btn.appState';
-import * as SetglobalBtnListActions from "./store/action/global-btn.actions"
-
+import * as SetglobalBtnListActions from "./store/action/global-btn.actions";
+import "../../../../../public/stylesheets/grs-bundle/grs-bundle.css";
 @Component({
     selector: 'global-btn',
     templateUrl: './global-btn-template.html'

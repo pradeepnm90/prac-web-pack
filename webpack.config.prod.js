@@ -4,6 +4,7 @@ var webpack = require('webpack');
 var webpackMerge = require('webpack-merge');
 var commonConfig = require('./webpack.config.common.js');
 var ngw = require('@ngtools/webpack');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = webpackMerge.smart(commonConfig, {
     entry: {
@@ -30,6 +31,10 @@ module.exports = webpackMerge.smart(commonConfig, {
                     'angular2-template-loader',
                     // 'angular-router-loader?aot=true'
                 ]
+            },
+            {
+                test: /\.css$/,
+                use: [MiniCssExtractPlugin.loader, "css-loader"]
             }
         ]
     },
@@ -41,6 +46,7 @@ module.exports = webpackMerge.smart(commonConfig, {
         }),
         new webpack.optimize.UglifyJsPlugin({
             sourceMap: false
-        })
+        }),
+        new MiniCssExtractPlugin()
     ]
 });

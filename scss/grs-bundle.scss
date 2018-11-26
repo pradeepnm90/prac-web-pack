@@ -1,4 +1,6 @@
-
+.grs{
     @import "./partials/grs-base.scss";
+    @import "./partials//app.component.scss";
     @import "./partials/header.component.scss";
-    @import "./partials/global-btn.scss";
+    @import "./partials//global-btn.scss";
+}
