@@ -47,6 +47,9 @@
 .txtBold{
     font-weight: bold !important;
 }
+.textGrey{
+    color: $grey;
+}
 .noPad{
     padding: 0;
 }
@@ -115,6 +118,9 @@ a{
 }
 .vSpacer15{
     width: 5px;
+}
+.cusrorPointer{
+    cursor: pointer;
 }
 .pad-left-25{
     padding-left:25px;

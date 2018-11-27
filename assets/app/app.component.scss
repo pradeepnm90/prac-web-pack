@@ -1,62 +1,62 @@
 .modal{
-    &.documentBtn{
-        top: 16.4%;
-    }
+  &.documentBtn{
+      top: 16.4%;
+  }
 }
 
 .modal.left .modal-dialog,
 .modal.right .modal-dialog {
-    position: fixed;
-    margin: auto;
-    width: 400px;
-    height: 100%;
-    -webkit-transform: translate3d(0%, 0, 0);
-        -ms-transform: translate3d(0%, 0, 0);
-         -o-transform: translate3d(0%, 0, 0);
-            transform: translate3d(0%, 0, 0);
+  position: fixed;
+  margin: auto;
+  width: 500px;
+  height: 100%;
+  -webkit-transform: translate3d(0%, 0, 0);
+      -ms-transform: translate3d(0%, 0, 0);
+       -o-transform: translate3d(0%, 0, 0);
+          transform: translate3d(0%, 0, 0);
 }
 
 .modal.left .modal-content,
 .modal.right .modal-content {
-    height: 100%;
-    overflow-y: auto;
+  height: 100%;
+  overflow-y: auto;
 }
 
 .modal.left .modal-body,
 .modal.right .modal-body {
-    padding: 15px 15px 80px;
+  padding: 15px 15px 80px;
 }
 
 .modal-header{
-    background-color: #f5f5f5;
+  background-color: #f5f5f5;
 }
 
 .modal-title{
-    color: #A0A1A3;
+  color: #A0A1A3;
 }
 
-    
+  
 /*Right*/
 .modal.right.fade .modal-dialog {
-    right: -320px;
-    -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
-       -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
-         -o-transition: opacity 0.3s linear, right 0.3s ease-out;
-            transition: opacity 0.3s linear, right 0.3s ease-out;
+  right: -320px;
+  -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
+     -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
+       -o-transition: opacity 0.3s linear, right 0.3s ease-out;
+          transition: opacity 0.3s linear, right 0.3s ease-out;
 }
 .modal.right.fade.in .modal-dialog {
-    right: 0;
+  right: 0;
 }
 
 /* ----- MODAL STYLE ----- */
 .modal-content {
-    border-radius: 0;
-    border: none;
+  border-radius: 0;
+  border: none;
 }
 
 .modal-header {
-    border-bottom-color: #EEEEEE;
-    background-color: #FAFAFA;
+  border-bottom-color: #EEEEEE;
+  background-color: #FAFAFA;
 }
 
 /* ----- v CAN BE DELETED v ----- */
@@ -77,7 +77,7 @@ background-color: #FFFFFF;
 outline: 0;
 }
 .modal-body{
-    color: #000000;
+  color: #000000;
 }
 .demo-footer {
 position: fixed;
@@ -95,64 +95,64 @@ font-size: 16px;
 color: #fff;
 }
 .modal{
-    &.documentBtn{
-        top: 16.4%;
-    }
+  &.documentBtn{
+      top: 16.4%;
+  }
 }
 
 .modal.left .modal-dialog,
 .modal.right .modal-dialog {
-    position: fixed;
-    margin: auto;
-    width: 400px;
-    height: 100%;
-    -webkit-transform: translate3d(0%, 0, 0);
-        -ms-transform: translate3d(0%, 0, 0);
-         -o-transform: translate3d(0%, 0, 0);
-            transform: translate3d(0%, 0, 0);
+  position: fixed;
+  margin: auto;
+  width: 400px;
+  height: 100%;
+  -webkit-transform: translate3d(0%, 0, 0);
+      -ms-transform: translate3d(0%, 0, 0);
+       -o-transform: translate3d(0%, 0, 0);
+          transform: translate3d(0%, 0, 0);
 }
 
 .modal.left .modal-content,
 .modal.right .modal-content {
-    height: 100%;
-    overflow-y: auto;
+  height: 100%;
+  overflow-y: auto;
 }
 
 .modal.left .modal-body,
 .modal.right .modal-body {
-    padding: 15px 15px 80px;
+  padding: 15px 15px 80px;
 }
 
 .modal-header{
-    background-color: #f5f5f5;
+  background-color: #f5f5f5;
 }
 
 .modal-title{
-    color: #A0A1A3;
+  color: #A0A1A3;
 }
 
-    
+  
 /*Right*/
 .modal.right.fade .modal-dialog {
-    right: -320px;
-    -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
-       -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
-         -o-transition: opacity 0.3s linear, right 0.3s ease-out;
-            transition: opacity 0.3s linear, right 0.3s ease-out;
+  right: -320px;
+  -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
+     -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
+       -o-transition: opacity 0.3s linear, right 0.3s ease-out;
+          transition: opacity 0.3s linear, right 0.3s ease-out;
 }
 .modal.right.fade.in .modal-dialog {
-    right: 0;
+  right: 0;
 }
 
 /* ----- MODAL STYLE ----- */
 .modal-content {
-    border-radius: 0;
-    border: none;
+  border-radius: 0;
+  border: none;
 }
 
 .modal-header {
-    border-bottom-color: #EEEEEE;
-    background-color: #FAFAFA;
+  border-bottom-color: #EEEEEE;
+  background-color: #FAFAFA;
 }
 
 /* ----- v CAN BE DELETED v ----- */
@@ -173,7 +173,7 @@ background-color: #FFFFFF;
 outline: 0;
 }
 .modal-body{
-    color: #000000;
+  color: #000000;
 }
 .demo-footer {
 position: fixed;

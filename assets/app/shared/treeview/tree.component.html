@@ -1,0 +1,30 @@
+<ul class="pad-10-left">
+    <li id="drop-area" ng2FileDrop (fileOver)="fileOverBase($event,dir.name)" [uploader]="uploader" *ngFor="let dir of directories; let i=index;"
+        class=" droparea my-drop-zone" treeviewDirective #dropArea>
+
+        <span>
+            <i class="iconButton fa txtRed txtSize18" [ngClass]="(dir.getIcon()) ? 'fa-chevron-down':'fa-chevron-right'"
+                (click)="dir.toggle()" aria-hidden="true">
+                <i class="fa fa-file-text txtRed fileIcon txtSize32 pad-10-left pad-7-right" aria-hidden="true"></i>
+            </i> {{ dir.name }}
+        </span>
+
+        <div *ngIf="dir.expanded">
+
+            <ul>
+                <li *ngFor="let item of dir.files; let i = index" class="pad-70-left">
+                    <i class="fa fa-file-text txtRed  txtSize32 pad-10-left pad-7-right" aria-hidden="true"></i>{{item.originalname
+                    }}
+                    <span class="floatR cusrorPointer">
+                        <i class="fas fa-download textGrey txtSize18 " (click)="download(item)"></i>
+                    </span>
+
+                </li>
+            </ul>
+            <!-- recursive child tree view tag below -->
+            <!-- <child-tree-view [directories]="dir.directories"></child-tree-view> -->
+
+        </div>
+
+    </li>
+</ul>
