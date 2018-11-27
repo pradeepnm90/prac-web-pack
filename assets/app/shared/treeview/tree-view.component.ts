@@ -56,7 +56,6 @@ export class TreeViewComponent {
         }
         // matchedTreeView[0].files.push(this.uploader.queue[0].file.name);
 
-
     }
     download(receiveFile) {
         console.log(receiveFile, "index");
