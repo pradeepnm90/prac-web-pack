@@ -39,15 +39,12 @@ export class TreeViewComponent {
             return treeview.name === folderName;
         })
         this.uploader.onCompleteItem = (item: any, response: any, status: any, headers: any) => {
-            console.log(response, "response");
-            this.fileObj = this.uploader.queue[0].file;
-            console.log(this.fileObj, "inside completeItem");
-            alert("uploaded  " + this.uploader.queue[0].file.name + "  file");
-            console.log(this.uploader, "success Folder");
+            console.log(typeof (response), "response");
+            this.fileObj = this.uploader.queue[this.uploader.queue.length - 1];
+            alert("uploaded   " + this.fileObj.some.name + "   file");
             matchedTreeView[0].files.push(JSON.parse(response));
             this.el.nativeElement.style.backgroundColor = 'transparent';
-
-            if (this.uploader.queue[0].file.type == "") {
+            if (this.fileObj.file.type == "") {
                 this.getMsgDetails(this.fileObj);
             }
         }
@@ -128,8 +125,6 @@ export class TreeViewComponent {
     }
     getMsgDetails(getFileObj) {
         if (this.isSupportedFileAPI) {
-            let msgFileName = getFileObj.name;
-            console.log(msgFileName, "msg filename");
             let fileReader = new FileReader();
             fileReader.onload = (e) => {
                 console.log(e, "fil reader on load");
@@ -156,14 +151,13 @@ export class TreeViewComponent {
                         reCipients,
                         msgDate,
                         subject,
-                        msgBody,
-                        attchMent
+                        msgBody
                     }
 
                     alert(JSON.stringify(this.msgObjDetails, null, 4));
                 }
             }
-            fileReader.readAsArrayBuffer(getFileObj.rawFile);
+            fileReader.readAsArrayBuffer(getFileObj.file.rawFile);
         }
     }
 }
