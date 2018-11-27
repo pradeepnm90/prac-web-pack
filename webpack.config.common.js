@@ -21,5 +21,11 @@ module.exports = {
             { test: /\.(png|woff|woff2|eot|ttf|svg)$/, loader: 'url-loader?limit=100000' }
         ],
         exprContextCritical: false
-    }
+    },
+    plugins: [new webpack.ProvidePlugin({
+        $: "jquery",
+        jquery: "jquery",
+        "window.jQuery": "jquery",
+        jQuery: "jquery"
+    })]
 };
